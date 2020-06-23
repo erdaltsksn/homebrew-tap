@@ -2,16 +2,16 @@
 class GitBump < Formula
   desc "Semantic Version Bumper using git tag"
   homepage "https://github.com/erdaltsksn/git-bump"
-  version "0.1.0"
+  version "0.1.1"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/erdaltsksn/git-bump/releases/download/v0.1.0/git-bump_0.1.0_darwin_amd64.tar.gz"
-    sha256 "bccee90265b8dca022ee59b3a75042c6fbf07c360cb29352d1d0a53e2b858cc6"
+    url "https://github.com/erdaltsksn/git-bump/releases/download/v0.1.1/git-bump_0.1.1_darwin_amd64.tar.gz"
+    sha256 "d3509bdd6650a466cf8fa86af01a93140203dc708fdf4b8978358e0e2eff7625"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/erdaltsksn/git-bump/releases/download/v0.1.0/git-bump_0.1.0_linux_amd64.tar.gz"
-      sha256 "a3eb2f463914d4db6f3184be954aaf68088b77c7fcd0a9f7f08e08357ead007c"
+      url "https://github.com/erdaltsksn/git-bump/releases/download/v0.1.1/git-bump_0.1.1_linux_amd64.tar.gz"
+      sha256 "0f6a97ad6aeb8b14fc15d170d80b85993d0f107fb4d216904e0dd4155f64163a"
     end
   end
 
