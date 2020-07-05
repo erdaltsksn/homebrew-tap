@@ -21,7 +21,7 @@ brew install erdaltsksn/tap/<APPLICATION_NAME>
 brew tap erdaltsksn/tap
 ```
 
-## Updating
+## Updating / Upgrading
 
 ```sh
 brew upgrade <APPLICATION_NAME>
