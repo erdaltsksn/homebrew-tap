@@ -2,16 +2,16 @@
 class Random < Formula
   desc "Random data generator AKA faker"
   homepage "https://github.com/erdaltsksn/random"
-  version "0.13.1"
+  version "0.14.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/erdaltsksn/random/releases/download/v0.13.1/random_0.13.1_darwin_amd64.tar.gz"
-    sha256 "05e247c2e2c545f6494675ab3cce0055b5af81cbe1cfdd92ee5183bb07927461"
+    url "https://github.com/erdaltsksn/random/releases/download/v0.14.0/random_0.14.0_darwin_amd64.tar.gz"
+    sha256 "8778c4da2525c16a07f1886c22e3392abd106629d8ef283de5e35896a3b14346"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/erdaltsksn/random/releases/download/v0.13.1/random_0.13.1_linux_amd64.tar.gz"
-      sha256 "90164d605d00b4ec10d25d3293e6184b009d2c74821bf327c098d38c1181ee23"
+      url "https://github.com/erdaltsksn/random/releases/download/v0.14.0/random_0.14.0_linux_amd64.tar.gz"
+      sha256 "5ad6b16d95a65508972c811b80b9254dd1962fa04db8f3d8fe42cb507f71b797"
     end
   end
 
