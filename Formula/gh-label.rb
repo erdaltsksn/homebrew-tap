@@ -2,16 +2,16 @@
 class GhLabel < Formula
   desc "GitHub Issue Label Manager"
   homepage "https://github.com/erdaltsksn/gh-label"
-  version "0.6.0"
+  version "0.7.0"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/erdaltsksn/gh-label/releases/download/v0.6.0/gh-label_0.6.0_darwin_amd64.tar.gz"
-    sha256 "048df395c86f85f0aa08239b05e1d5cf9e07dbc5593d9118b66e8fb15b58e94e"
+    url "https://github.com/erdaltsksn/gh-label/releases/download/v0.7.0/gh-label_0.7.0_darwin_amd64.tar.gz"
+    sha256 "730e9daa89e88e62ca98086cdf71cd886c91e3868e5e37770819bee74da4fc41"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/erdaltsksn/gh-label/releases/download/v0.6.0/gh-label_0.6.0_linux_amd64.tar.gz"
-      sha256 "3e7e59571aeb442ee8eeda51d48f0f404bb2f0b0a972863a50eadefcb37520dd"
+      url "https://github.com/erdaltsksn/gh-label/releases/download/v0.7.0/gh-label_0.7.0_linux_amd64.tar.gz"
+      sha256 "22c00311008b01c420b087947fb5903e09b555e015505fbde5f5a8b91a2e73a4"
     end
   end
 
