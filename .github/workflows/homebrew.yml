@@ -1,0 +1,33 @@
+name: Homebrew
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: Build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macOS-latest]
+
+    steps:
+    - name: Check out code into $GITHUB_WORKSPACE directory
+      uses: actions/checkout@v2
+
+    - name: Set up Homebrew
+      uses: Homebrew/actions/setup-homebrew@master
+
+    - name: Tap the repository
+      run: |
+        brew tap erdaltsksn/tap
+
+    - name: Install all Formulas
+      run: |
+        for file in ./Formula/*.rb; do
+            formula=$(echo "${file}" | sed "s/.\/Formula\///g" | sed "s/.rb//g")
+            brew install ${formula}
+        done
